@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/Poppins/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/Poppins/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #000;
+  text-decoration: #000;
+}
+a:hover {
+  color: #000;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+.container-fluid {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+body {
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+.menu-bar {
+  padding: 23px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+}
+.menu-bar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-bar-inner .menu-logo {
+  padding-right: 79px;
+}
+.menu-bar-inner nav .navbar .nav-item {
+  display: inline-block;
+  margin-left: 28px;
+  margin-right: 29px;
+  vertical-align: middle;
+}
+.menu-bar-inner nav .navbar .nav-item a {
+  color: #fff;
+}
+.menu-bar-inner nav .navbar .nav-item:first-child {
+  margin-left: 0;
+}
+.menu-bar-inner .navbar-icon {
+  margin: 27px 0;
+  vertical-align: middle;
+}
+.menu-bar-inner .navbar-icon i {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
