@@ -49,6 +49,12 @@ body {
   font-family: 'Poppins';
   font-size: 14px;
 }
+.header {
+  background-image: url(/Giaodien4/assets/img/Base.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
 .menu-bar {
   padding: 23px 0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -72,14 +78,26 @@ body {
 .menu-bar-inner nav .navbar .nav-item a {
   color: #fff;
 }
+.menu-bar-inner nav .navbar .nav-item a:hover {
+  cursor: pointer;
+  color: #dd2f31;
+}
 .menu-bar-inner nav .navbar .nav-item:first-child {
   margin-left: 0;
 }
-.menu-bar-inner .navbar-icon {
-  margin: 27px 0;
-  vertical-align: middle;
-}
 .menu-bar-inner .navbar-icon i {
+  display: inline-block;
+  margin-left: 13px;
+  margin-right: 12px;
+  vertical-align: middle;
   color: #fff;
+}
+.menu-bar-inner .navbar-icon i:hover {
+  cursor: pointer;
+  color: #dd2f31;
+}
+.menu-bar-inner .navbar-icon a {
+  color: #989898;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
