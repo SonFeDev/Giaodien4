@@ -1,58 +1,102 @@
 .header {
-    background-image: url(/Giaodien4/assets/img/Base.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-}
-.menu-bar {
-    padding: 23px 0;
-    background-color: fade(#000, 80%);
-    font-size: 16px;
-    font-weight: 400;
+background-image: url(/Giaodien4/assets/img/Base.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
 
-    &-inner {
-        .flex();
-        .menu-logo {
-            padding-right: 79px;
-        }
-        nav {
-            .navbar {
-                .nav-item {
-                    display: inline-block;
-                    margin-left: 28px;
-                    margin-right: 29px;
-                    vertical-align: middle;
-                    a {
-                        color: #fff;
-                        &:hover {
-                            cursor: pointer;
-                            color: @hover;
+    .menu-bar {
+        padding: 23px 0;
+        background-color: fade(#000, 70%);
+        font-size: 16px;
+        font-weight: 400;
+
+        &-inner {
+            .flex();
+            .menu-logo {
+                padding-right: 79px;
+            }
+            nav {
+                .navbar {
+                    .nav-item {
+                        display: inline-block;
+                        margin-left: 28px;
+                        margin-right: 29px;
+                        vertical-align: middle;
+                        a {
+                            color: #fff;
+
+                            &:hover {
+                                cursor: pointer;
+                                color : @hover;
+                            }
+                        }
+                        &:first-child {
+                            margin-left: 0;
                         }
                     }
-                    &:first-child {
-                        margin-left: 0;
+                }
+
+            }
+            .navbar-icon {
+                i {
+                    display: inline-block;
+                    margin-left: 13px;
+                    margin-right: 12px;
+                    vertical-align: middle;
+                    color: #fff;
+
+                    &:hover {
+                        cursor: pointer;
+                        color : @hover;
                     }
                 }
-            }
 
-        }
-        .navbar-icon {
-            i {
-                display: inline-block;
-                margin-left: 13px;
-                margin-right: 12px;
-                vertical-align: middle;
-                color: #fff;
-                &:hover {
-                    cursor: pointer;
-                    color: @hover;
+                a {
+                    color: @banner-description;
+                    font-size: 14px;
                 }
             }
-            a {
-                    color: @banner-description;
-                    font-size: 14px;        
-            }                  
-        }    
-    }
+        }
 
-} 
+    }
+    .introduction {
+        width: 550px;
+        margin-left: 110.5px;
+        margin-top: 100px;
+        padding: 0;
+    
+        &-inner {
+            color: #fff;
+            .shop {
+                font-weight: 700;
+                font-size: 60px;
+            }
+            .introduce {
+                font-weight: 700;
+                font-size: 40px;
+            }
+            .description {
+                font-weight: 400;
+                font-size: 14px;
+                color: #ccc;
+            }
+            .btn {
+                margin-top: 63px;
+
+                a {
+                    color: #fff;
+                    background-color: transparent;
+                    padding: 20px 49px;          
+                    border: 1px solid #fff;  
+                    text-transform: uppercase;
+                    &:hover {
+                        cursor: pointer;
+                        color: @hover;
+                        border: 1px solid @hover;
+                    }    
+                }
+            
+            }
+        }
+    }
+}

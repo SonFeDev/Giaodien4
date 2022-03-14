@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Poppins';
   src: url('../font/Poppins/Poppins-Regular.ttf');
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
@@ -53,51 +53,88 @@ body {
   background-image: url(/Giaodien4/assets/img/Base.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
 }
-.menu-bar {
+.header .menu-bar {
   padding: 23px 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   font-size: 16px;
   font-weight: 400;
 }
-.menu-bar-inner {
+.header .menu-bar-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu-bar-inner .menu-logo {
+.header .menu-bar-inner .menu-logo {
   padding-right: 79px;
 }
-.menu-bar-inner nav .navbar .nav-item {
+.header .menu-bar-inner nav .navbar .nav-item {
   display: inline-block;
   margin-left: 28px;
   margin-right: 29px;
   vertical-align: middle;
 }
-.menu-bar-inner nav .navbar .nav-item a {
+.header .menu-bar-inner nav .navbar .nav-item a {
   color: #fff;
 }
-.menu-bar-inner nav .navbar .nav-item a:hover {
+.header .menu-bar-inner nav .navbar .nav-item a:hover {
   cursor: pointer;
   color: #dd2f31;
 }
-.menu-bar-inner nav .navbar .nav-item:first-child {
+.header .menu-bar-inner nav .navbar .nav-item:first-child {
   margin-left: 0;
 }
-.menu-bar-inner .navbar-icon i {
+.header .menu-bar-inner .navbar-icon i {
   display: inline-block;
   margin-left: 13px;
   margin-right: 12px;
   vertical-align: middle;
   color: #fff;
 }
-.menu-bar-inner .navbar-icon i:hover {
+.header .menu-bar-inner .navbar-icon i:hover {
   cursor: pointer;
   color: #dd2f31;
 }
-.menu-bar-inner .navbar-icon a {
+.header .menu-bar-inner .navbar-icon a {
   color: #989898;
   font-size: 14px;
+}
+.header .introduction {
+  width: 550px;
+  margin-left: 110.5px;
+  margin-top: 100px;
+  padding: 0;
+}
+.header .introduction-inner {
+  color: #fff;
+}
+.header .introduction-inner .shop {
+  font-weight: 700;
+  font-size: 60px;
+}
+.header .introduction-inner .introduce {
+  font-weight: 700;
+  font-size: 40px;
+}
+.header .introduction-inner .description {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ccc;
+}
+.header .introduction-inner .btn {
+  margin-top: 63px;
+}
+.header .introduction-inner .btn a {
+  color: #fff;
+  background-color: transparent;
+  padding: 20px 49px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+}
+.header .introduction-inner .btn a:hover {
+  cursor: pointer;
+  color: #dd2f31;
+  border: 1px solid #dd2f31;
 }
 /*# sourceMappingURL=style.css.map */
