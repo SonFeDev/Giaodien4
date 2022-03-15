@@ -1,0 +1,116 @@
+.slider {
+    background-image: url(/Giaodien4/assets/img/Base.jpg);
+    height          : 947px;
+    position        : relative;
+}
+
+.introduction {
+    padding    : 0;
+    position   : absolute;
+    top        : 50%;
+    transform  : translateY(-50%);
+    width      : 525px;
+    margin-top : -39px;
+    margin-left: -3px;
+
+    &-inner {
+        color: #fff;
+
+        .shop {
+            font-weight: 700;
+            font-size  : 60px;
+            margin-top : 49px;
+        }
+
+        .introduce {
+            font-weight: 700;
+            font-size  : 40px;
+            margin-top : -7px;
+            margin-left: 1px;
+        }
+
+        .description {
+            font-weight: 400;
+            font-size  : 14px;
+            color      : #ccc;
+            margin-top : 22px;
+            margin-left: 4px;
+            line-height: 1.7;
+        }
+
+        .btn {
+            margin-top: 75px;
+
+            a {
+                color           : #fff;
+                background-color: transparent;
+                padding         : 13px 49px;
+                border          : 1px solid #fff;
+                text-transform  : uppercase;
+
+                &:hover {
+                    cursor: pointer;
+                    color : @hover;
+                    border: 1px solid @hover;
+                }
+            }
+
+        }
+    }
+}
+
+.category {
+    padding: 0;
+    margin-top: -77px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    .flex();
+    background-color: #fff;
+    flex-wrap: wrap;
+    &-list {
+        width: calc( 100% / 3);
+       
+        &-image {
+            line-height: 0;
+        }
+        &>img {
+            width: 100%;
+        }
+        &-inner {
+            text-align: center;
+            line-height: 2.5;
+
+            .title {
+                font-weight: 700;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            
+            .describe {
+                font-weight: 400;
+                font-size: 14px;
+                color: #777777;
+            }
+        }
+    }
+}
+
+.tab {
+    display: flex;
+    margin-top: 98px;
+
+    a {
+        font-weight: 700;
+        font-size: 18px;
+        margin-left: 34px;
+        margin-right: 34px;
+        text-transform: uppercase;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:hover {
+            color: @hover;
+            border-bottom: @hover;
+        }
+    }
+}

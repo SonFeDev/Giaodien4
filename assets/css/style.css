@@ -49,92 +49,169 @@ body {
   font-family: 'Poppins';
   font-size: 14px;
 }
-.header {
-  background-image: url(/Giaodien4/assets/img/Base.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-.header .menu-bar {
+.menu-bar {
   padding: 23px 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   font-size: 16px;
   font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding-bottom: 15px;
 }
-.header .menu-bar-inner {
+.menu-bar-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .menu-bar-inner .menu-logo {
+.menu-bar-inner .menu-logo {
   padding-right: 79px;
 }
-.header .menu-bar-inner nav .navbar .nav-item {
+.menu-bar-inner nav {
+  margin-left: -80px;
+  margin-top: -3px;
+}
+.menu-bar-inner nav .navbar .nav-item {
   display: inline-block;
-  margin-left: 28px;
-  margin-right: 29px;
+  margin-left: 24px;
+  margin-right: 24px;
   vertical-align: middle;
 }
-.header .menu-bar-inner nav .navbar .nav-item a {
+.menu-bar-inner nav .navbar .nav-item a {
   color: #fff;
 }
-.header .menu-bar-inner nav .navbar .nav-item a:hover {
+.menu-bar-inner nav .navbar .nav-item a:hover {
   cursor: pointer;
   color: #dd2f31;
 }
-.header .menu-bar-inner nav .navbar .nav-item:first-child {
+.menu-bar-inner nav .navbar .nav-item:first-child {
   margin-left: 0;
 }
-.header .menu-bar-inner .navbar-icon i {
+.menu-bar-inner .navbar-icon {
+  margin-top: -8px;
+  margin-right: -20px;
+}
+.menu-bar-inner .navbar-icon:first-child {
+  margin-left: 0px;
+}
+.menu-bar-inner .navbar-icon i {
   display: inline-block;
-  margin-left: 13px;
-  margin-right: 12px;
+  margin-left: 22px;
+  margin-right: 20px;
   vertical-align: middle;
   color: #fff;
 }
-.header .menu-bar-inner .navbar-icon i:hover {
+.menu-bar-inner .navbar-icon i:hover {
   cursor: pointer;
   color: #dd2f31;
 }
-.header .menu-bar-inner .navbar-icon a {
+.menu-bar-inner .navbar-icon a {
   color: #989898;
   font-size: 14px;
 }
-.header .introduction {
-  width: 550px;
-  margin-left: 110.5px;
-  margin-top: 100px;
-  padding: 0;
+.slider {
+  background-image: url(/Giaodien4/assets/img/Base.jpg);
+  height: 947px;
+  position: relative;
 }
-.header .introduction-inner {
+.introduction {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 525px;
+  margin-top: -39px;
+  margin-left: -3px;
+}
+.introduction-inner {
   color: #fff;
 }
-.header .introduction-inner .shop {
+.introduction-inner .shop {
   font-weight: 700;
   font-size: 60px;
+  margin-top: 49px;
 }
-.header .introduction-inner .introduce {
+.introduction-inner .introduce {
   font-weight: 700;
   font-size: 40px;
+  margin-top: -7px;
+  margin-left: 1px;
 }
-.header .introduction-inner .description {
+.introduction-inner .description {
   font-weight: 400;
   font-size: 14px;
   color: #ccc;
+  margin-top: 22px;
+  margin-left: 4px;
+  line-height: 1.7;
 }
-.header .introduction-inner .btn {
-  margin-top: 63px;
+.introduction-inner .btn {
+  margin-top: 75px;
 }
-.header .introduction-inner .btn a {
+.introduction-inner .btn a {
   color: #fff;
   background-color: transparent;
-  padding: 20px 49px;
+  padding: 13px 49px;
   border: 1px solid #fff;
   text-transform: uppercase;
 }
-.header .introduction-inner .btn a:hover {
+.introduction-inner .btn a:hover {
   cursor: pointer;
   color: #dd2f31;
   border: 1px solid #dd2f31;
+}
+.category {
+  padding: 0;
+  margin-top: -77px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+.category-list {
+  width: calc(100% / 3);
+}
+.category-list-image {
+  line-height: 0;
+}
+.category-list > img {
+  width: 100%;
+}
+.category-list-inner {
+  text-align: center;
+  line-height: 2.5;
+}
+.category-list-inner .title {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.category-list-inner .describe {
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+}
+.tab {
+  display: flex;
+  margin-top: 98px;
+}
+.tab a {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 34px;
+  margin-right: 34px;
+  text-transform: uppercase;
+}
+.tab a:first-child {
+  margin-left: 0;
+}
+.tab a:hover {
+  color: #dd2f31;
+  border-bottom: #dd2f31;
 }
 /*# sourceMappingURL=style.css.map */
