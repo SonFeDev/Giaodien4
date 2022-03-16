@@ -43,7 +43,7 @@ ul li {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 -15px;
 }
 body {
   font-family: 'Poppins';
@@ -213,5 +213,60 @@ body {
 .tab a:hover {
   color: #dd2f31;
   border-bottom: #dd2f31;
+}
+.hr {
+  color: #dddddd;
+}
+.tab-content .tab-item .product {
+  width: 25%;
+  padding: 0 15px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.tab-content .tab-item .product:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.tab-content .tab-item .product:hover .product-icon {
+  display: block;
+}
+.tab-content .tab-item .product:hover .product-icon-inner {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #dddddd;
+  border-radius: 10px 0 10px 0;
+  text-align: center;
+  margin: 7.5px 0;
+  color: #777777;
+}
+.tab-content .tab-item .product:hover .product-icon-inner:hover {
+  color: #fff;
+  background-color: #dd2f31;
+  cursor: pointer;
+}
+.tab-content .tab-item .product-icon {
+  display: none;
+  position: absolute;
+  top: 9%;
+  right: 8%;
+}
+.tab-content .tab-item .product-icon-inner {
+  position: relative;
+}
+.tab-content .tab-item .product-icon-inner i {
+  position: absolute;
+  top: 11px;
+  left: 9px;
+}
+.tab-content .tab-item .product-content {
+  margin-left: 31px;
+}
+.tab-content .tab-item .product-content .product-name {
+  font-weight: 400;
+  font-size: 14px;
+}
+.tab-content .tab-item .product-content .product-price {
+  font-weight: 700;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
