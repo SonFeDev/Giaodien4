@@ -18,3 +18,11 @@ $(document).ready(function () {
 
     activeTab($('.tab li:first-child'));
 });
+
+$('.responding').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });

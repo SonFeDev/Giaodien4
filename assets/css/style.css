@@ -116,7 +116,7 @@ body {
   height: 947px;
   position: relative;
 }
-.introduction {
+.slider .introduction {
   padding: 0;
   position: absolute;
   top: 50%;
@@ -125,21 +125,21 @@ body {
   margin-top: -39px;
   margin-left: -3px;
 }
-.introduction-inner {
+.slider .introduction-inner {
   color: #fff;
 }
-.introduction-inner .shop {
+.slider .introduction-inner .shop {
   font-weight: 700;
   font-size: 60px;
   margin-top: 49px;
 }
-.introduction-inner .introduce {
+.slider .introduction-inner .introduce {
   font-weight: 700;
   font-size: 40px;
   margin-top: -7px;
   margin-left: 1px;
 }
-.introduction-inner .description {
+.slider .introduction-inner .description {
   font-weight: 400;
   font-size: 14px;
   color: #ccc;
@@ -147,20 +147,65 @@ body {
   margin-left: 4px;
   line-height: 1.7;
 }
-.introduction-inner .btn {
+.slider .introduction-inner .btn {
   margin-top: 75px;
 }
-.introduction-inner .btn a {
+.slider .introduction-inner .btn a {
   color: #fff;
   background-color: transparent;
   padding: 13px 49px;
   border: 1px solid #fff;
   text-transform: uppercase;
 }
-.introduction-inner .btn a:hover {
+.slider .introduction-inner .btn a:hover {
   cursor: pointer;
   color: #dd2f31;
   border: 1px solid #dd2f31;
+}
+.replying {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+.responding {
+  line-height: 1.8;
+}
+.responding .client {
+  text-align: center;
+  margin-top: 30px;
+}
+.responding .client-reply {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0 200px;
+  color: #777777;
+}
+.responding .client-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+.responding .client-status {
+  font-weight: 400;
+  font-size: 14;
+  color: #777777;
+}
+.slick-slide img {
+  display: unset;
+}
+.slick-dots {
+  position: unset;
+}
+l .slick-prev {
+  display: none;
+}
+.slick-next {
+  display: none;
+}
+.slick-dots li button {
+  text-align: center;
+}
+.slick-dots li.slick-active button:before {
+  color: #dd2f31;
 }
 .category {
   padding: 0;
@@ -214,7 +259,7 @@ body {
   color: #dd2f31;
   border-bottom: #dd2f31;
 }
-.hr {
+hr {
   color: #dddddd;
 }
 .tab-content .tab-item .product {
@@ -223,6 +268,7 @@ body {
   margin: 15px 0;
   box-sizing: border-box;
   position: relative;
+  padding: 0;
 }
 .tab-content .tab-item .product:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -268,5 +314,71 @@ body {
 .tab-content .tab-item .product-content .product-price {
   font-weight: 700;
   font-size: 14px;
+}
+.brand img {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+footer {
+  background-color: #222222;
+}
+.about-us {
+  text-align: center;
+  color: #6c6c6c;
+}
+.about-us img {
+  margin-top: 50px;
+}
+.about-us-describe {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 610px;
+  margin-top: 20px;
+}
+.about-us-social {
+  margin-top: 25px;
+}
+.about-us-social i {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.about-us-social i:hover {
+  cursor: pointer;
+  color: #dd2f31;
+}
+.ft-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ft-information-list .list-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.ft-information-list .list-detail-inner {
+  display: flex;
+}
+.ft-information-list .list-detail-inner i {
+  color: #6c6c6c;
+  margin-right: 10px;
+}
+.ft-information-list .list-detail-inner-text {
+  color: #6c6c6c;
+  margin-bottom: 15px;
+}
+.copyright {
+  height: 35px;
+  background-color: #000;
+}
+.copyright-text {
+  padding: 5px 0;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #6c6c6c;
 }
 /*# sourceMappingURL=style.css.map */

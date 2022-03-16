@@ -1,0 +1,115 @@
+.slider {
+    background-image: url(/Giaodien4/assets/img/Base.jpg);
+    height          : 947px;
+    position        : relative;
+
+
+    .introduction {
+        padding    : 0;
+        position   : absolute;
+        top        : 50%;
+        transform  : translateY(-50%);
+        width      : 525px;
+        margin-top : -39px;
+        margin-left: -3px;
+
+        &-inner {
+            color: #fff;
+
+            .shop {
+                font-weight: 700;
+                font-size  : 60px;
+                margin-top : 49px;
+            }
+
+            .introduce {
+                font-weight: 700;
+                font-size  : 40px;
+                margin-top : -7px;
+                margin-left: 1px;
+            }
+
+            .description {
+                font-weight: 400;
+                font-size  : 14px;
+                color      : #ccc;
+                margin-top : 22px;
+                margin-left: 4px;
+                line-height: 1.7;
+            }
+
+            .btn {
+                margin-top: 75px;
+
+                a {
+                    color           : #fff;
+                    background-color: transparent;
+                    padding         : 13px 49px;
+                    border          : 1px solid #fff;
+                    text-transform  : uppercase;
+
+                    &:hover {
+                        cursor: pointer;
+                        color : @hover;
+                        border: 1px solid @hover;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.replying {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+.responding {
+    line-height: 1.8;
+    .client {
+        text-align: center;
+        margin-top: 30px;
+        &-reply {
+            font-weight: 400;
+            font-size: 18px;
+            padding: 0 200px;
+            color: #777777;
+        }
+        &-name {
+            font-weight: 700;
+            font-size: 18px;
+        }
+        &-status {
+            font-weight: 400;
+            font-size: 14;
+            color: #777777;
+        }
+    }
+}
+
+.slick-slide img {
+    display: unset;
+}
+
+.slick-dots{
+    position: unset;
+}
+l
+.slick-prev {
+    display: none;
+}
+
+.slick-next {
+    display: none;
+}
+
+.slick-dots li button {
+    text-align: center;
+}
+
+.slick-dots li.slick-active button:before {
+    color:@hover;
+}
+
