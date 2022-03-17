@@ -43,7 +43,8 @@ ul li {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: 0 2px;
+  width: 100%;
 }
 body {
   font-family: 'Poppins';
@@ -171,7 +172,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  margin-top: 60px;
+  padding-top: 122px;
 }
 .responding {
   line-height: 1.8;
@@ -205,6 +206,7 @@ body {
 }
 .slick-dots {
   position: unset;
+  padding-top: 20px;
 }
 l .slick-prev {
   display: none;
@@ -217,6 +219,13 @@ l .slick-prev {
 }
 .slick-dots li.slick-active button:before {
   color: #dd2f31;
+  font-size: 12px;
+}
+.slick-dots li button:before {
+  font-size: 12px;
+}
+.slick-dots li {
+  margin: 0;
 }
 .category {
   padding: 0;
@@ -231,6 +240,9 @@ l .slick-prev {
 }
 .category-list {
   width: calc(100% / 3);
+}
+.category-list:nth-child(4) {
+  padding-top: 10px;
 }
 .category-list-image {
   line-height: 0;
@@ -259,6 +271,9 @@ l .slick-prev {
 .category-list:nth-child(2)-content-inner .title {
   transform: translateY(10px);
 }
+.breadcrump ul li.active a {
+  color: #dd2f31;
+}
 .tab {
   display: flex;
   margin-top: 98px;
@@ -278,24 +293,19 @@ l .slick-prev {
   color: #dd2f31;
   border-bottom: #dd2f31;
 }
-hr {
-  color: #dddddd;
-  transform: translateY(88px);
-}
 .tab-content {
   margin-left: 16px;
   margin-top: 24px;
 }
 .tab-content .tab-item .product {
   width: 25%;
-  margin: 59px -2px;
   box-sizing: border-box;
   position: relative;
-  padding: 0;
+  padding: 0 2px;
+  padding-top: 20px;
 }
-.tab-content .tab-item .product img {
-  margin-top: -39px;
-  margin-left: 1px;
+.tab-content .tab-item .product:nth-child(n+5) {
+  padding-top: 79px;
 }
 .tab-content .tab-item .product:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -343,8 +353,12 @@ hr {
   font-weight: 700;
   font-size: 14px;
 }
+#brand-hr {
+  color: #dddddd;
+  transform: translateY(65px);
+}
 .brand {
-  margin-top: 126px;
+  padding-top: 96px;
   transform: translateX(-13px);
   text-align: center;
   margin-bottom: 36px;
@@ -403,6 +417,7 @@ footer {
 }
 .ft-information {
   display: flex;
+  padding-bottom: 27px;
 }
 .ft-information-list {
   margin-left: 174px;
@@ -433,14 +448,22 @@ footer {
   margin-bottom: 20px;
 }
 .copyright {
-  height: 35px;
+  height: 50px;
   background-color: #000;
 }
 .copyright-text {
-  padding: 5px 0;
+  padding-top: 14px;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
   color: #6c6c6c;
+}
+@media all and (max-width: 1200px) {
+  .slider {
+    background-position: 55% 0;
+  }
+  .about-us-describe {
+    padding: 0 235px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

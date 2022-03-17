@@ -1,6 +1,6 @@
 $(document).ready(function () {
     function activeTab(obj) {
-        $('.tab ul li').removeClass('active');
+        $('.breadcrump ul li').removeClass('active');
 
         $(obj).addClass('active');
 

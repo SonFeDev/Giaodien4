@@ -9,6 +9,10 @@
 
     &-list {
         width: calc(100% / 3);
+        &:nth-child(4) {
+            padding-top: 10px;
+
+        }
 
         &-image {
             line-height: 0;
@@ -48,10 +52,15 @@
     }
 }
 
+.breadcrump ul li.active a {
+    color: @hover;
+}
+
 .tab {
     display   : flex;
     margin-top: 98px;
     margin-left: 18px;
+
 
     a {
         font-weight   : 700;
@@ -71,10 +80,7 @@
     }
 }
 
-hr {
-    color: #dddddd;
-    transform: translateY(88px);
-}
+
 
 
 .tab-content {
@@ -84,10 +90,12 @@ hr {
         .product {
             .col(25%);
             position: relative;
-            padding: 0;  
-            img {
-                margin-top: -39px;
-                margin-left: 1px;
+            padding: 0 2px;
+            padding-top: 20px;  
+           
+            &:nth-child(n+5) {
+                padding-top: 79px;
+            
             }
             &:hover {
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -109,7 +117,6 @@ hr {
                     }
                 }
             }
-
         }
 
             &-icon {
@@ -144,8 +151,12 @@ hr {
     }
 }
 
+#brand-hr {
+    color: #dddddd;
+    transform: translateY(65px);
+}
 .brand {
-    margin-top: 126px;
+    padding-top: 96px;
     transform: translateX(-13px);
     text-align: center;
     margin-bottom: 36px;
