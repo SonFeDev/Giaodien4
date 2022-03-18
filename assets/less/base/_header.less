@@ -1,3 +1,17 @@
+.cover {
+    position: fixed;;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0;
+    z-index: -1;
+}
+.cover.active {
+    opacity: 0.9;
+    z-index: 100;
+    .transit(all, .5s);
+}
+
 .menu-bar {
     padding: 23px 0;
     background-color: fade(#000, 60%);
@@ -17,12 +31,20 @@
         .menu-logo {
             padding-right: 79px;
         }
-
+        
         nav {
             margin-left: -80px;
             margin-top: -3px;
+            .nav-open {
+                display: none;
+            }
             .navbar {
                 margin-left: 4px;
+
+                .nav-title {
+                    display: none;
+                }
+
                 .nav-item {
                     display: inline-block;
                     margin-left: 24px;

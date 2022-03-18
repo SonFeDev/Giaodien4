@@ -75,7 +75,6 @@
 
         &:hover {
             color        : @hover;
-            border-bottom: @hover;
         }
     }
 }
@@ -96,6 +95,14 @@
             &:nth-child(n+5) {
                 padding-top: 79px;
             
+            }
+            
+            &:nth-child(4) {
+                padding-right: 0;
+            } 
+
+            &:last-child {
+                padding-right: 0;
             }
             &:hover {
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);

@@ -8,3 +8,19 @@
     width: @width;
     box-sizing: border-box;
 }
+
+.transformer (@scale) {
+    transform: @scale;
+    -webkit-transform: @scale;
+    -moz-transform: @scale;
+    -ms-transform: @scale;
+    -o-transform: @scale;
+}
+
+.transit (@attr, @sec) {
+    transition: @attr, @sec;
+    -webkit-transition: @attr, @sec;
+    -moz-transition: @attr, @sec;
+    -ms-transition: @attr, @sec;
+    -o-transition: @attr, @sec;
+}
