@@ -42,6 +42,7 @@ footer {
 
 .ft-information {
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 27px;
 
     &-list {
@@ -65,19 +66,29 @@ footer {
         }
 
         .list-detail {
+            i {
+                padding-right: 22px;
+                padding-bottom: 22px;
+                color: @footer-text
+            }
+
+            a {
+                color: @footer-text;
+                padding: 5px 0;
+                &:hover {
+                    color: @hover;
+                    text-decoration: underline;
+                }
+            }
             &-inner {
                 display: flex;
-
-                .footer-ic {
-                    color: @footer-text;
-                    margin-right: 22px;
-
-                }
 
                 &-text {
                     margin-bottom: 20px;
                     a {
-                        color: @footer-text;          
+                        color: @footer-text;     
+                        padding: 7px 0;     
+                        
                         &:hover {
                             cursor: pointer;
                             color: @hover;
