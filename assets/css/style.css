@@ -143,7 +143,7 @@ body {
   font-size: 14px;
 }
 .slider {
-  background-image: url(/Giaodien4/assets/img/Base.jpg);
+  background-image: url(../img/Base.jpg);
   height: 947px;
   position: relative;
 }
