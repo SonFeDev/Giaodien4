@@ -1,14 +1,15 @@
 .category {
-    padding   : 0;
+    padding: 0;
     margin-top: -75px;
-    position  : relative;
+    position: relative;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     .flex();
     background-color: #fff;
-    flex-wrap       : wrap;
+    flex-wrap: wrap;
 
     &-list {
         width: calc(100% / 3);
+
         &:nth-child(4) {
             padding-top: 10px;
 
@@ -23,25 +24,26 @@
         }
 
         &-inner {
-            text-align : center;
+            text-align: center;
             line-height: 2.5;
 
             .title {
-                font-weight   : 700;
-                font-size     : 18px;
+                font-weight: 700;
+                font-size: 18px;
                 text-transform: uppercase;
                 margin-bottom: 10px;
             }
 
             .describe {
                 font-weight: 400;
-                font-size  : 14px;
-                color      : #777777;
+                font-size: 14px;
+                color: #777777;
                 margin: 0 32px;
                 line-height: 1.7;
                 transform: translateY(1px);
             }
         }
+
         &:nth-child(2) {
             &-content-inner {
                 .title {
@@ -57,16 +59,16 @@
 }
 
 .tab {
-    display   : flex;
+    display: flex;
     margin-top: 98px;
     margin-left: 18px;
 
 
     a {
-        font-weight   : 700;
-        font-size     : 18px;
-        margin-left   : 34px;
-        margin-right  : 34px;
+        font-weight: 700;
+        font-size: 18px;
+        margin-left: 34px;
+        margin-right: 34px;
         text-transform: uppercase;
 
         &:first-child {
@@ -74,65 +76,59 @@
         }
 
         &:hover {
-            color        : @hover;
+            color: @hover;
         }
     }
 }
 
-
-
-
 .tab-content {
-    margin-left: 16px;
-    margin-top: 24px;
     .tab-item {
         .product {
             .col(25%);
             position: relative;
-            padding: 0 2px;
-            padding-top: 20px;  
-           
+            margin-top: 37px;
+            padding: 0 15px;
+
             &:nth-child(n+5) {
-                padding-top: 79px;
-            
+                margin-top: 49px;
             }
-            
-            &:nth-child(4) {
-                padding-right: 0;
-            } 
 
-            &:last-child {
-                padding-right: 0;
-            }
-            &:hover {
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-                .product-icon {
-                    display: block;
-                    &-inner {
-                        width: 34px;
-                        height: 34px;
-                        border: 1px solid #dddddd;
-                        border-radius: 10px 0 10px 0;
-                        text-align: center;
-                        margin: 7.5px 0;
-                        color: #777777;
-                        &:hover {
-                        color: #fff;
-                        background-color: @hover;
-                        cursor: pointer;
+            &-detail {
+                &:hover {
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 
+                    .product-icon {
+                        display: block;
+
+                        &-inner {
+                            width: 34px;
+                            height: 34px;
+                            border: 1px solid #dddddd;
+                            border-radius: 10px 0 10px 0;
+                            text-align: center;
+                            margin: 11px 0;
+                            color: #777777;
+
+                            &:hover {
+                                color: #fff;
+                                background-color: @hover;
+                                cursor: pointer;
+
+                            }
+                        }
                     }
                 }
             }
-        }
 
             &-icon {
                 display: none;
                 position: absolute;
-                top: 9%;
-                right: 8%;
+                top: 4%;
+                right: 11%;
+
                 &-inner {
                     position: relative;
+
                     i {
                         position: absolute;
                         top: 11px;
@@ -144,14 +140,16 @@
             &-content {
                 margin-left: 30px;
                 margin-top: 21px;
+                padding-bottom: 31px;
+
                 .product-name {
                     font-weight: 400;
-                    font-size  : 14px;
+                    font-size: 14px;
                 }
 
                 .product-price {
                     font-weight: 700;
-                    font-size  : 14px;
+                    font-size: 14px;
                 }
             }
         }
@@ -162,11 +160,13 @@
     color: #dddddd;
     transform: translateY(65px);
 }
+
 .brand {
     padding-top: 96px;
     transform: translateX(-13px);
     text-align: center;
     margin-bottom: 36px;
+
     img {
         margin-right: 32px;
         margin-left: 30px;
@@ -174,17 +174,22 @@
         &:nth-child(2) {
             transform: translate(7px, -4px);
         }
+
         &:nth-child(3) {
             transform: translateX(15px);
         }
+
         &:nth-child(4) {
             transform: translate(21px, -14px);
         }
+
         &:nth-child(5) {
             transform: translate(26px, -11px);
         }
+
         &:nth-child(6) {
             transform: translate(28px, -5px);
         }
     }
 }
+

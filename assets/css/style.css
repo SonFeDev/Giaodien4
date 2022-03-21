@@ -46,8 +46,7 @@ ul li {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 2px;
-  width: 100%;
+  margin: 0 -15px;
 }
 body {
   font-family: 'Poppins';
@@ -198,7 +197,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  padding-top: 122px;
+  padding-top: 90px;
 }
 .responding {
   line-height: 1.8;
@@ -318,42 +317,32 @@ l .slick-prev {
 .tab a:hover {
   color: #dd2f31;
 }
-.tab-content {
-  margin-left: 16px;
-  margin-top: 24px;
-}
 .tab-content .tab-item .product {
   width: 25%;
   box-sizing: border-box;
   position: relative;
-  padding: 0 2px;
-  padding-top: 20px;
+  margin-top: 37px;
+  padding: 0 15px;
 }
 .tab-content .tab-item .product:nth-child(n+5) {
-  padding-top: 79px;
+  margin-top: 49px;
 }
-.tab-content .tab-item .product:nth-child(4) {
-  padding-right: 0;
-}
-.tab-content .tab-item .product:last-child {
-  padding-right: 0;
-}
-.tab-content .tab-item .product:hover {
+.tab-content .tab-item .product-detail:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-.tab-content .tab-item .product:hover .product-icon {
+.tab-content .tab-item .product-detail:hover .product-icon {
   display: block;
 }
-.tab-content .tab-item .product:hover .product-icon-inner {
+.tab-content .tab-item .product-detail:hover .product-icon-inner {
   width: 34px;
   height: 34px;
   border: 1px solid #dddddd;
   border-radius: 10px 0 10px 0;
   text-align: center;
-  margin: 7.5px 0;
+  margin: 11px 0;
   color: #777777;
 }
-.tab-content .tab-item .product:hover .product-icon-inner:hover {
+.tab-content .tab-item .product-detail:hover .product-icon-inner:hover {
   color: #fff;
   background-color: #dd2f31;
   cursor: pointer;
@@ -361,8 +350,8 @@ l .slick-prev {
 .tab-content .tab-item .product-icon {
   display: none;
   position: absolute;
-  top: 9%;
-  right: 8%;
+  top: 4%;
+  right: 11%;
 }
 .tab-content .tab-item .product-icon-inner {
   position: relative;
@@ -375,6 +364,7 @@ l .slick-prev {
 .tab-content .tab-item .product-content {
   margin-left: 30px;
   margin-top: 21px;
+  padding-bottom: 31px;
 }
 .tab-content .tab-item .product-content .product-name {
   font-weight: 400;
@@ -443,8 +433,9 @@ footer {
   color: #dd2f31;
 }
 #ft-hr {
-  transform: translateY(0);
   margin-top: 50px;
+  color: #444;
+  height: 1px;
 }
 .ft-information {
   display: flex;
@@ -475,8 +466,15 @@ footer {
   margin-right: 22px;
 }
 .ft-information-list .list-detail-inner-text {
-  color: #6c6c6c;
   margin-bottom: 20px;
+}
+.ft-information-list .list-detail-inner-text a {
+  color: #6c6c6c;
+}
+.ft-information-list .list-detail-inner-text a:hover {
+  cursor: pointer;
+  color: #dd2f31;
+  text-decoration: underline;
 }
 .copyright {
   height: 50px;
