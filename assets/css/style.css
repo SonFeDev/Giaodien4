@@ -616,8 +616,17 @@ footer {
   .about-us-describe {
     padding: 0 115px;
   }
+  .ft-information {
+    justify-content: space-between;
+  }
   .ft-information-list {
-    margin-left: 100px;
+    margin-left: unset;
+  }
+  .ft-information-list-detail {
+    font-size: 12px;
+  }
+  .ft-information-list-detail a {
+    font-size: 12px;
   }
 }
 @media all and (max-width: 768px) {
@@ -665,14 +674,11 @@ footer {
   .about-us .about-us-describe {
     padding: 0 45px;
   }
-  .ft-information-list {
-    margin-left: 100px;
+  .ft-information-list:nth-child(2) {
+    margin-left: 139px;
   }
-  .ft-information-list .list-title {
-    font-size: 10px;
-  }
-  .ft-information-list .list-detail {
-    font-size: 8px;
+  .ft-information-list:nth-child(4) {
+    padding-right: 22px;
   }
   .brand {
     transform: translateX(0);
