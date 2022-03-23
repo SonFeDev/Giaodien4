@@ -655,7 +655,8 @@ footer {
     font-size: 10px;
   }
   .category-list-inner .describe {
-    font-size: 7px;
+    font-size: 9px;
+    margin: unset;
   }
   .tab-content .tab-item .product {
     width: 50%;
